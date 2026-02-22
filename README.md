@@ -77,6 +77,7 @@ MediSight is built specifically to showcase the power of the **Gemini Live API**
 ---
 
 ## 🏗️ Architecture
+![MediSight Architecture](architecture.png)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
