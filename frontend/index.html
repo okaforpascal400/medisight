@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSight — Your Real-Time Medical Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <span class="logo-icon">🏥</span>
+                <h1>MediSight</h1>
+            </div>
+            <p class="tagline">Your real-time AI medical visual assistant</p>
+        </header>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-dot" id="statusDot"></div>
+            <span id="statusText">Ready to connect</span>
+        </div>
+
+        <!-- Video Preview -->
+        <div class="video-container">
+            <video id="videoPreview" autoplay playsinline muted></video>
+            <div class="video-overlay" id="videoOverlay">
+                <span>📷 Camera off</span>
+            </div>
+        </div>
+
+        <!-- Transcript -->
+        <div class="transcript" id="transcript">
+            <div class="transcript-message assistant">
+                <span>👋 Hi! I'm MediSight. Start a session, then show me a pill bottle, prescription, or describe your symptoms. I'm here to help!</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button class="btn btn-primary" id="startBtn" onclick="startSession()">
+                🎙️ Start Session
+            </button>
+            <button class="btn btn-camera" id="cameraBtn" onclick="toggleCamera()" disabled>
+                📷 Camera
+            </button>
+            <button class="btn btn-danger" id="stopBtn" onclick="stopSession()" disabled>
+                ⏹ Stop
+            </button>
+        </div>
+
+        <!-- Text Input -->
+        <div class="text-input-container">
+            <input type="text" id="textInput" placeholder="Or type your question here..." onkeypress="handleKeyPress(event)"/>
+            <button onclick="sendText()">Send</button>
+        </div>
+
+        <!-- Disclaimer -->
+        <footer>
+            <p>⚕️ MediSight provides information only, not medical diagnosis. Always consult a healthcare professional for medical advice.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
