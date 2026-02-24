@@ -39,6 +39,7 @@ async def live_endpoint(websocket: WebSocket):
     config = types.LiveConnectConfig(
         response_modalities=["AUDIO"],
         system_instruction=SYSTEM_PROMPT,
+        tools=[types.Tool(google_search=types.GoogleSearch())],
     )
 
     # Queue decouples browser input from Gemini session lifecycle.
