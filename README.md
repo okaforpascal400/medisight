@@ -65,7 +65,7 @@ MediSight is built specifically to showcase the power of the **Gemini Live API**
 
 ## 🎬 Demo Video
 
-> *[Insert your 4-minute demo video link here]*
+> *[[![MediSight Demo](https://img.youtube.com/vi/3uWKbx-fYXA/0.jpg)](https://youtu.be/3uWKbx-fYXA)*
 
 **What the demo shows:**
 1. MediSight greeting and introducing herself
