@@ -17,7 +17,7 @@ let activeSources = [];
 let audioQueue = [];
 let isAiSpeaking = false;
 let vadCooldown = false;
-const VAD_THRESHOLD = 0.25;
+const VAD_THRESHOLD = 0.35;
 let interruptPending = false;
 
 function stopAllAudio() {
